@@ -21,10 +21,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post("/Locations/Locations", (req, res) => {
+app.post("/Locations", (req, res) => {
   const { latitude, longitude } = req.body;
 
-  database.ref("Locations/Locations").push({
+  database.ref("location").push({
     latitude,
     longitude
   });
@@ -33,7 +33,7 @@ app.post("/Locations/Locations", (req, res) => {
 });
 
 app.get("/Locations", (req, res) => {
-  const locationsRef = database.ref("locations");
+  const locationsRef = database.ref("location");
 
   locationsRef.once("value", (snapshot) => {
     const locations = [];

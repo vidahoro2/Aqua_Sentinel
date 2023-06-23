@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Map, Marker } from "google-maps-react";
-import './mapa.css'
+import "./mapa.css"
 
 const MyMapComponent = () => {
-  const [center, setCenter] = useState({ lat:0, lng: 0 });
+  const [location, setLocation] = useState({ lat: 2.4427442336088903,  lng: -76.60333565079202 });
+  const [center, setCenter] = useState({ lat: 2.4420796500701263,  lng: -76.60631826719997 });
+
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -12,25 +14,30 @@ const MyMapComponent = () => {
       })
         .then(response => response.json())
         .then(data => {
-          // actualizamos la ubicación del dispositivo en el estado
-          setCenter({
-            lat: data.latitude,
-            lng: data.longitude
+          console.log(data); // Imprimir en la consola la respuesta de la petición GET
+
+          // Actualizar la ubicación del dispositivo en el estado
+          const locationData = data[0].location;
+          setLocation({
+            lat: locationData.latitude,
+            lng: locationData.longitude
           });
         })
         .catch(error => {
           console.error(error);
         });
-    }, 1000);
+    }, 3000);
 
-    // limpiamos el intervalo al desmontar el componente
+    // Limpiar el intervalo al desmontar el componente
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <Map google={window.google} zoom={14} initialCenter={center} center={center}>
-      <Marker position={center} />
-    </Map>
+    <div className="map-container">
+      <Map google={window.google} zoom={15} initialCenter={center} center={center}>
+        <Marker position={location} />
+      </Map>
+    </div>
   );
 };
 

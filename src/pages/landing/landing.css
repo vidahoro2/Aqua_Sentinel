@@ -1,0 +1,21 @@
+.slider-container {
+    height: 500px !important;
+
+
+    @media (max-width: 1024px) {
+      overflow-x: hidden !important;  
+    }
+  }
+.landing-container{
+  
+  @media (max-width: 1024px) {
+  overflow-x: hidden !important;
+  }
+  
+}
+.slider-container-comp1{
+  @media (max-width: 1024px) {
+    overflow-x: hidden !important; 
+  }
+
+}

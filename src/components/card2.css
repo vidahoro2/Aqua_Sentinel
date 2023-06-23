@@ -1,0 +1,9 @@
+/* CSS */
+.Transparent-card {
+    background-color: transparent;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Black.ttf');
+  }

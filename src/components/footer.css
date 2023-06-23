@@ -1,0 +1,72 @@
+.icon-container {
+    display: inline-block;
+    margin-right: 10px; /* Agregar un margen derecho para separar los iconos */
+  }
+  
+  .icon-container > * {
+    display: inline-block;
+    vertical-align: middle; /* Alinear verticalmente los iconos con los enlaces */
+    margin-right: 5px; /* Agregar un margen derecho para separar los iconos de los enlaces */
+  }
+
+ 
+.parrfo{
+  @media (max-width: 768px) {
+  font-size: 0.5rem !important;
+  margin-left: 1rem !important;
+}
+}
+
+@media (max-width: 568px) {
+  .parrfo{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+}}
+@media (max-width:468px) {
+  .parrfo{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+}
+}
+@media (max-width:368px) {
+  .parrfo{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+}
+}
+@media (max-width:268px) {
+  .parrfo{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+}
+}
+.parrfo2{
+  @media (max-width: 768px) {
+  font-size: 0.5rem !important;
+  margin-left: 1rem !important;
+  }
+}
+@media (max-width: 568px) {
+  .parrfo2{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+  }
+}
+@media (max-width: 468px) {
+  .parrfo2{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+  }
+}
+@media (max-width: 368px) {
+  .parrfo2{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+  }
+}
+@media (max-width: 268px) {
+  .parrfo2{
+  font-size: 0.3rem !important;
+  margin-left: 1rem !important;
+  }
+}

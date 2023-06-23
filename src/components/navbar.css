@@ -1,0 +1,98 @@
+nav{
+    height: 4rem;
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 100%) {
+    .nav__links {
+      display: none;
+      color: white;
+    }
+    .nav__toogle-btn {
+      display: block;
+      
+    }
+  }
+.Button1-text {
+     margin-left: 30px;
+}
+.Button {
+  display: flex;
+  background-color: #84007b !important;
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px !important;
+  width:150px ;
+  height: 40px !important;
+  margin-top:30px;
+  text-align: center !important;
+  align-items: center !important;
+  
+}
+.Button:hover, .Button:focus {
+  background-color: #84007b !important;
+  color: white;
+}
+
+.Button1 {
+    display: flex;
+    background-color: #84007b !important;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px !important;
+    width:150px ;
+    height: 40px !important;
+    margin-top:30px;
+    text-align: center !important;
+    align-items: center !important;
+    
+}
+.Button1:hover, .Button1:focus {
+    background-color: #84007b !important;
+    color: white;
+    
+
+  }
+
+.nav__container{
+    max-width: 200px; /* o cualquier otro valor que desees */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end; /* Agrega esta línea para alinear los elementos a la derecha */
+    
+  }
+
+    .logo img {
+      max-width: 6%;
+    }
+
+.nav__links{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+      
+}
+
+/* CSS */
+.Button2-link {
+  color: #84007b;
+}
+
+

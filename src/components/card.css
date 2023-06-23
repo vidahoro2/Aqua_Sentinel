@@ -1,0 +1,21 @@
+/* CSS */
+.Transparent-card {
+    background-color: transparent;
+    @media (max-width: 768px) {
+      
+    }
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Black.ttf');
+  }
+
+  video::-webkit-media-controls {
+    display:none !important;
+  }
+
+.card-header{
+  font-size: 10px !important;
+}
+

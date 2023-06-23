@@ -1,0 +1,13 @@
+.tittle-add{
+
+    color: #840781 !important;
+    font-family: 'Poppins' !important;
+    font-weight: bold;
+    src: url('../../../../assets/fonts/Poppins/Poppins-Bold.ttf') !important;
+    width: 100% !important;
+}
+.MuiCard-root {
+    font-family: 'Poppins' !important;
+    src: url('../../../../assets/fonts/Poppins/Poppins-Bold.ttf') !important;
+  }
+

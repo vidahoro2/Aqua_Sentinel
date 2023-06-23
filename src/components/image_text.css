@@ -1,0 +1,12 @@
+.container-all{
+    @media (max-width: 768px) {
+        margin: 0rem !important;
+        gap: 0 !important;
+    }
+
+}
+
+.imagen-texto2{
+    height: '100%'; 
+    object-fit:"cover";
+}

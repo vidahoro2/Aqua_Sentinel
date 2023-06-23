@@ -1,0 +1,52 @@
+image: ubuntu:latest
+
+variables:
+  APP_NAME: www/app
+  BUILD_FOLDER: build/
+  REGION: "us-east-1"
+  BUCKET_NAME: pr-cf-www-web-ui	
+  CLOUDFRONT: E1ZE7ICKNBLWWX 
+  INVALIDATION_PATH: "/www/app/*"
+  PIPELINE_BASE: kaleidolab/advergame/utilities
+  PIPELINE_PATH: pipelines
+
+stages:
+  - build
+  - deploy
+
+#---------#
+#-- DEV --#
+#---------#
+
+build-dev:
+  stage: build
+  # image: node:14-slim
+  only:
+    - dev
+  # before_script:
+  #   - npm install --force
+  script:  
+    # - npm run build
+    - cd ${BUILD_FOLDER} 
+  artifacts:
+    paths:
+      - ${BUILD_FOLDER}
+
+deploy-frontend-dev:
+  stage: deploy
+  needs: [ build-dev ]
+  image:
+      name: amazon/aws-cli:2.2.18
+      entrypoint: [""]
+  only:
+    - dev
+  before_script:
+    - yum install jq git -y -q
+    - git clone https://gitlab-ci-token:${CI_JOB_TOKEN}@${CI_SERVER_HOST}/${PIPELINE_BASE}/${PIPELINE_PATH}.git
+    - export AWS_ACCOUNT_ID=${AWS_ACCOUNT_ID_DEV}
+    - export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID_DEV}
+    - export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY_DEV}
+    - export AWS_DEFAULT_REGION=${REGION}
+  script:
+    - chmod +x ${PIPELINE_PATH}/frontend-deploy.sh
+    - ${PIPELINE_PATH}/frontend-deploy.sh

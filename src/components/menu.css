@@ -1,0 +1,37 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .menu-cards {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+  
+  .menu-card {
+    flex: 0 0 80%;
+    margin-right: 2rem;
+    transition: transform 0.5s;
+  }
+  
+  .menu-card:last-child {
+    margin-right: 0;
+  }
+  
+  .menu-card.active {
+    transform: scale(1.2);
+  }
+  
+  .menu-controls {
+    margin-top: 1rem;
+    display: flex;
+  }
+  
+  .menu-control {
+    font-size: 3rem;
+    margin: 0 1rem;
+    cursor: pointer;
+  }

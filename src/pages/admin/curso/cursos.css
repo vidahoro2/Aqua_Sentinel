@@ -1,0 +1,20 @@
+.tittle-add{
+
+    color: #840781 !important;
+    font-family: 'poppinsBold' !important;
+    font-weight: bold;
+    width: 100% !important;
+}
+.MuiCard-root {
+    font-family: 'Poppins' !important;
+    src: url('../../../assets/fonts/Poppins/Poppins-Bold.ttf') !important;
+  }
+
+  
+.title-curso{
+    color: #5B5A5A !important;
+      font-family: 'poppinsBlack';
+      font-weight: bold;
+      src: url('../../../assets/fonts/Poppins/Poppins-Black.ttf');
+      font-size: 3rem;
+  }

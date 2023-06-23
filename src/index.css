@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url("../src/assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url("../src/assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppinsBlack;
+  src: url("../src/assets/fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url("../src/assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: poppinsExtraBold;
+  src: url("../src/assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: poppinsLight;
+  src: url("../src/assets/fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: poppinsExtraLight;
+  src: url("../src/assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+}
+
+.container {
+  width: 90%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: var(--color-gray-100);
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 15%;
+}

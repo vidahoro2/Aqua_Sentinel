@@ -1,0 +1,196 @@
+@font-face {
+  font-family: poppinsBold;
+  src: url("../../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppinsBlack;
+  src: url("../../assets/fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+body {
+  /*overflow: hidden;  Hide scrollbars */
+  font-family: poppinsRegular;
+  width: 100%;
+}
+
+/* CSS */
+.Welcome-header {
+  font-size: 2.2em;
+}
+
+.register-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: 40%;
+  height: 100%;
+  padding: 0 6rem 6rem 0;
+  background-color: #fff;
+}
+
+.company-logo {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #840781;
+}
+
+.company-logo img {
+  max-width: 30%;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #840781;
+  font-weight: 700;
+  width: 100%;
+}
+
+input {
+  padding: .7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  font-size: 0.8rem;
+}
+
+a {
+  color: #840781;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+}
+
+.decorative-image-register {
+  width: 60%;
+  height: 120%;
+  background-image: url('/src/assets/images/Aqua_Sentinel.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-right: 60px;
+}
+
+.newBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#idBtn {
+  border-radius: 4rem;
+  width: 30%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .register-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .register-form {
+    width: 100%;
+    height: 100%;
+    padding: 0 6rem 6rem 0;
+    background-color: #fff;
+  }
+
+  .decorative-image-register {
+    width: 0%;
+    height: 0%;
+  }
+
+  .company-logo {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #840781;
+  }
+
+  .company-logo h1 {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .company-logo img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0rem;
+    width: 100%;
+  }
+
+  label {
+    font-size: .8rem;
+    margin-bottom: 0.5rem;
+    color: #840781;
+    font-weight: 700;
+    width: 100%;
+  }
+
+  input {
+    padding: .7rem;
+    margin-bottom: 1rem !important;
+    border: 1px solid #ccc;
+    border-radius: 1.5rem;
+    font-size: .8rem;
+  }
+
+  a {
+    font-size: .6rem;
+    margin-bottom: 2rem;
+  }
+
+  #idBtn {
+    border-radius: 2rem;
+    width: 100%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-weight: 600;
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}

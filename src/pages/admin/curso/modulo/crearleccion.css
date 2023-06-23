@@ -1,0 +1,156 @@
+ 
+  h1, h2, h6, p {
+    font-family: poppinsBold;
+  }
+  
+  title{
+    font-family: poppinsBold;
+  }
+
+
+.pi-button{
+    color: #ffffff !important;
+    font-family: 'Poppins';
+    font-weight: bold;
+    src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+    font-size: 0.8rem;
+}
+
+.nextButton{
+  color: #ffff !important;
+  border-radius: 20px !important;
+  text-align: center !important;
+  width:200px ;
+  background-color: #840781 !important;   
+  font-weight: bold !important;
+}
+
+.cancelButton{
+  color: #840781 !important;
+  border-radius: 20px !important;
+  text-align: center !important;
+  width:200px ;
+  background-color: #ffff !important;   
+  font-weight: bold !important;
+}
+
+.pc-button{
+  color: #840781 !important;
+  font-family: 'Poppins';
+  font-weight: bold;
+  src: url('../../../../assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+  font-size: 0.8rem;
+}
+
+.title-crear-leccion{
+  color: #5B5A5A !important;
+    font-family: 'Poppins';
+    font-weight: bold;
+    src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+    font-size: 3rem;
+    transform: translate(-40px, 30px);
+
+}
+
+.subtitle-crear-leccion{
+    color: #5B5A5A !important;
+      font-family: 'Poppins';
+      font-weight: bold;
+      src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+      font-size: 0.8rem;
+      transform: translate(-40px, 30px);
+
+    }
+
+.subtitle-crear{
+    color: #5B5A5A !important;
+      font-family: 'Poppins';
+      src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+      font-size: 0.7rem;
+
+    }
+
+.subtitle-components{
+  color: #840781 !important;
+  font-family: 'Poppins';
+  font-weight: bold;
+  src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+  font-size: 1rem;
+
+}
+.subtitle-components-image{
+  color: #840781 !important;
+  font-family: 'Poppins';
+  font-weight: bold;
+  src: url('../../../../assets/fonts/Poppins/Poppins-Black.ttf');
+  font-size: 1rem;
+  margin-bottom: 90px;
+  transform: translate(0px, -30px);
+}
+
+.form-container-comp{
+  width: 75%;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 20px;
+  border:none;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-left: -40px;
+  margin-top: 50px;
+}
+
+.componente15 {
+  grid-column: 1 ;
+  grid-row: 1;
+  width: 400px;
+  margin-top: 70px;
+}
+
+.componente16 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 140px;
+}
+
+
+.componente17 {
+  grid-row: 1;
+  grid-column: 2;
+  background-image: url('../../../../assets/images/image_holder_leccion1.png');
+  background-position: 0px 0px;
+  width: 500px;
+  height: 300px;
+  margin-bottom: 10px;
+  
+}
+
+
+.componente28 {
+  grid-column: 1;
+  transform: translate(40px, 5px);
+}
+
+.componente29{
+  grid-row: 3;
+  grid-column: 2;
+  transform: translate(300px, -40px);
+}
+.componente18{
+  grid-row: 3;
+  grid-column: 2;
+  transform: translate(120px, 60px);
+}
+.componente10{
+  grid-row: 3;
+  grid-column: 2;
+  transform: translate(-60px, -40px);
+}

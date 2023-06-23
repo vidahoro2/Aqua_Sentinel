@@ -1,0 +1,239 @@
+@font-face {
+  font-family: poppinsBold;
+  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: poppinsBlack;
+  src: url("../assets/fonts/Poppins/Poppins-Black.ttf");
+}
+
+@font-face {
+  font-family: poppinsMedium;
+  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+h1, h2, h6, p {
+  font-family: poppinsBold;
+}
+
+title{
+  font-family: poppinsBlack ;
+}
+
+.overlay-container {
+  position: relative;
+  transform: translate(0%, -130%);
+}
+.image-container {
+    position: relative;
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 31%; /* Proporción de aspecto de 16:9 */
+    
+  }
+  
+.image {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+  
+.text-container {
+    position: absolute;
+    
+    transform: translate(0%, -50%);
+    z-index: 1;
+    margin: 0rem 1rem 2rem 0rem;
+    @media (max-width: 768px) {
+      top: 10%;
+      left: 72%;
+
+    }
+    
+  }
+  
+.title-image{
+    
+    text-align: justify;
+    text-align: right;  
+    color: #FCD107;
+    margin: 0rem 1rem 0rem 0rem;
+    font-family: poppinsBlack;
+    font-weight: 900; }
+
+@media (min-width: 1800px) and (max-width: 2000px) {
+      .title-image{
+      font-size: 3.8rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      margin: 0rem 2rem 0rem 0rem;
+    }
+    }
+    @media (min-width: 1600px) and (max-width: 1800px) {
+      .title-image{
+      font-size: 3.2rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+          }    
+        }
+    @media (min-width: 1500px) and (max-width: 1600px) {
+      .title-image{
+      font-size: 3.1rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      }}
+    @media (min-width: 1400px) and (max-width: 1500px) {
+      .title-image{
+      font-size: 3rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      }}  
+    @media (min-width: 1366px) and (max-width: 1400px) {
+      .title-image{
+      font-size: 2.8rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      }}
+    
+    
+    
+    @media (min-width: 1280px) and (max-width: 1366px) {
+      .title-image{
+      font-size: 2.5rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+    
+    @media (min-width: 1100px) and (max-width: 1280px) {
+      .title-image{
+      font-size: 2.2rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+    
+    @media (min-width: 900px) and (max-width: 1100px) {
+      .title-image{
+      font-size: 1.6rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+    
+    @media (min-width: 720px) and (max-width: 900px) {
+      .title-image{
+      font-size: 1.3rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+    
+    @media (min-width: 620px) and (max-width: 720px) {
+      .title-image{
+      font-size: 1.2rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      }
+    }
+    @media (min-width: 520px) and (max-width: 620px) {
+      .title-image{
+      font-size: 1rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+
+    @media (min-width: 450px) and (max-width: 520px) {
+      .title-image{
+      font-size: 0.8rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+
+    @media (min-width: 380px) and (max-width: 450px) {
+      .title-image{
+      font-size: 0.6rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+    }}
+    @media (min-width: 200px) and (max-width: 380px) {
+      .title-image{
+      font-size: 0.45rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      margin-left: 1rem;
+    }}
+
+
+
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+    text-align: justify;
+    transform: translate(5%, 0%);
+  }
+  
+  
+  .button-comienza {
+    background-color: #84007b ;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    width: 140px;
+    height: 40px;
+    transform: translate(13vw, 1vw);
+    @media (max-width: 1366px) {
+      font-size: 0.7rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 140px;
+    height: 40px;
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    @media (max-width: 1280px) {
+      font-size: 0.8rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 140px;
+      height: 40px;
+      transform: translate(12vw, 1vw);
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    @media (max-width: 900px) {
+      font-size: 0.6rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 90px;
+      height: 30px;
+      transform: translate(12vw, 1vw);
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    
+    @media (max-width: 720px) {
+      font-size: 0.4rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 70px;
+      height: 30px;
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    @media (max-width: 620px) {
+      font-size: 0.4rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 60px;
+      height: 20px;
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    @media (max-width: 400px) {
+      font-size: 0.3rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 50px;
+      height: 20px;
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    @media (max-width: 300px) {
+      font-size: 0.2rem; /* Tamaño de fuente para pantallas de dispositivos móviles */
+      width: 30px;
+      height: 10px;
+      .button-comienza:hover {
+        background-color: #5b0076;
+        color: #dfdcdc;
+      }
+    }
+    
+  }
+  
+  .button-comienza:hover {
+    background-color: #5b0076;
+    color: #dfdcdc;
+  }
+

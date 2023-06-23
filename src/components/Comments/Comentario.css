@@ -1,0 +1,29 @@
+.img-comment{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+
+.text-username{
+    color: #84007B;
+    font-family: poppinsBold;
+}
+
+.text-comment{
+    font-family: poppinsRegular;
+}
+
+.likes-cont{
+    display: flex; 
+    align-items: center; 
+    margin-top: 10px
+}
+
+.likes-cont button{
+    color: #84007B;
+    font-family: poppinsRegular;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
